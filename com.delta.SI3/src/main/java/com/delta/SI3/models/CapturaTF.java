@@ -1,6 +1,7 @@
 package com.delta.SI3.models;
 
 import javax.persistence.Entity;
+import javax.persistence.OneToOne;
 
 @Entity
 public class CapturaTF {
@@ -17,7 +18,8 @@ private String interfaceDestino;
 private int portaOrigem;
 private int portaDestino;
 
-
+@OneToOne
+private Controlluser controlluser;
 
 public String getNome() {
 	return nome;

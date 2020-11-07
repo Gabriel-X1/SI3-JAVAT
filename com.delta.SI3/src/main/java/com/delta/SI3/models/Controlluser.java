@@ -8,6 +8,9 @@ import javax.persistence.OneToOne;
 public class Controlluser {
 private String login;
 
+@OneToOne
+private Usuario usuario;
+
 @OneToMany
 private RegrasES regrasES;
 

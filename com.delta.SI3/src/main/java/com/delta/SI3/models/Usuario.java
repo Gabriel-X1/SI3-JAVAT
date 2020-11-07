@@ -8,6 +8,7 @@ public class Usuario {
 	
 private String nome;
 private String email;
+
 @OneToOne
 private Controlluser  controlluser;
 

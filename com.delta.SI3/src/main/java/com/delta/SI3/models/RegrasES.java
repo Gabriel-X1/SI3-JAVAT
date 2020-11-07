@@ -1,6 +1,7 @@
 package com.delta.SI3.models;
 
 import javax.persistence.Entity;
+import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 
 @Entity
@@ -12,6 +13,9 @@ private String protocol;
 
 @OneToMany
 private WhiteL_BlackL whiteL_blackL;
+
+@ManyToOne
+private Controlluser controlluser;
 
 public String getNome() {
 	return nome;
